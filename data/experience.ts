@@ -1,6 +1,7 @@
 export const experience = [
   {
-    company: "Department of Education",
+    company:
+      "Department of Education - General Santos City National Secondary School of Arts and Trades",
     position: "Registrar I",
     period: "2016 – Present",
     description:
@@ -17,12 +18,13 @@ export const experience = [
   },
 
   {
-    company: "Software Development",
-    position: "Freelance Systems Developer",
-    period: "2013 – Present",
+    company:
+      "Local Government Unit of General Santos City - Information and Communications Technology Division",
+    position: "Computer Programmer / Systems Analyst",
+    period: "2013 – 2016",
 
     description:
-      "Develop custom information systems, automation tools, reporting dashboards, and database-driven web applications.",
+      "Develop custom information systems, automation tools, reporting dashboards, and database-driven desktop and web applications.",
 
     achievements: [
       "PHP",
@@ -31,6 +33,7 @@ export const experience = [
       "VB.NET",
       "System Design",
       "Process Automation",
+      "Business Process Improvement",
     ],
   },
 ];
