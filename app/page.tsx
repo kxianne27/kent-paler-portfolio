@@ -3,6 +3,7 @@ import { Container } from "@/components/layout/Container";
 import { Hero } from "@/components/home/Hero";
 import { About } from "@/components/about/About";
 import { Experience } from "@/components/experience/Experience";
+import { Projects } from "@/components/projects/Projects";
 
 export default function Home() {
   return (
@@ -15,6 +16,8 @@ export default function Home() {
         <About />
         <div className="my-12 border-t border-slate-200" />
         <Experience />
+        <div className="my-12 border-t border-slate-200" />
+        <Projects />
         <div className="my-12 border-t border-slate-200" />
       </Container>
     </>
