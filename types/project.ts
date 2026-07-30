@@ -2,21 +2,31 @@ export interface Project {
   slug: string;
 
   title: string;
-
   subtitle: string;
+
+  client: string;
+  category: string;
 
   overview: string;
 
-  challenge: {
-    title: string;
-    items: string[];
-  }[];
+  challenge:
+    | string
+    | {
+        title: string;
+        items: string[];
+      }[];
 
   solution: string;
 
   impact: string[];
 
   technologies: string[];
+
+  modules?: string[];
+
+  responsibilities?: string[];
+
+  architecture?: string;
 
   role: string;
 
@@ -25,8 +35,4 @@ export interface Project {
   featured: boolean;
 
   image?: string;
-
-  client?: string;
-
-  category?: string;
 }

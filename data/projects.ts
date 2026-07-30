@@ -63,7 +63,7 @@ export const projects: Project[] = [
   },
 
   {
-    slug: "city-health-information-system",
+    slug: "chis",
 
     title: "City Health Information System",
 
@@ -113,6 +113,31 @@ export const projects: Project[] = [
     ],
 
     technologies: ["VB.NET", "SQL Server 2012"],
+
+    modules: [
+      "Patient Registration",
+      "Health Card Issuance",
+      "Medical Clearance",
+      "Laboratory",
+      "Certificate Printing",
+      "Billing",
+      "DOH Statistical Reports",
+      "User Management",
+    ],
+
+    responsibilities: [
+      "Requirements Gathering",
+      "Business Process Analysis",
+      "Database Design",
+      "System Architecture",
+      "Desktop Application Development",
+      "SQL Server Database Development",
+      "Crystal Reports Development",
+      "Deployment & User Training",
+      "Technical Support",
+    ],
+
+    architecture: "Client-Server Desktop Information System",
 
     role: "Systems Analyst & Software Developer",
 
