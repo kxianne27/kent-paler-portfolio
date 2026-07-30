@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import { projects } from "@/data/projects";
 import { Container } from "@/components/ui/Container";
 import Image from "next/image";
+import Link from "next/link";
 
 interface Props {
   params: Promise<{
@@ -22,6 +23,13 @@ export default async function ProjectPage({ params }: Props) {
 
   return (
     <Container className="py-20">
+      <Link
+        href="/#projects"
+        className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800"
+      >
+        ← Back to Projects
+      </Link>
+
       <div className="border-b border-slate-200 pb-14">
         <div className="mb-14 overflow-hidden rounded-3xl shadow-xl">
           <Image
@@ -33,6 +41,7 @@ export default async function ProjectPage({ params }: Props) {
             priority
           />
         </div>
+
         <div className="flex flex-wrap gap-3">
           <span className="rounded-full bg-slate-100 px-4 py-2 text-sm font-medium">
             {project.client}
