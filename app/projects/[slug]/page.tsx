@@ -137,7 +137,7 @@ export default async function ProjectPage({ params }: Props) {
         </h2>
 
         <div className="mt-10 grid gap-8 lg:grid-cols-3">
-          {Array.isArray(project.challenge) &&
+          {typeof project.challenge !== "string" &&
             project.challenge.map((section) => (
               <div
                 key={section.title}

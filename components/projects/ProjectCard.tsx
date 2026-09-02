@@ -64,7 +64,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
         </h4>
 
         <div className="space-y-5">
-          {Array.isArray(project.challenge)
+          {typeof project.challenge !== "string"
             ? project.challenge.map((section) => (
                 <div
                   key={section.title}
