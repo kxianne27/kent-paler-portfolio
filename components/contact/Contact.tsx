@@ -82,7 +82,7 @@ export function Contact() {
 
             <form
               className="mt-8 space-y-6"
-              action="https://formspree.io/f/your-form-id"
+              action={process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT}
               method="POST"
             >
               <div className="grid gap-6 sm:grid-cols-2">
