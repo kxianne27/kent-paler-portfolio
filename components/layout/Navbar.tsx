@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 
 import { profile } from "@/data/profile";
@@ -9,19 +9,66 @@ import { Menu, X, GitBranch, UserRound } from "lucide-react";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const menuRef = useRef<HTMLDivElement>(null);
+  const buttonRef = useRef<HTMLButtonElement>(null);
+
+  // Close menu on escape key
+  useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape" && isOpen) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener("keydown", handleKeyDown);
+    return () => document.removeEventListener("keydown", handleKeyDown);
+  }, [isOpen]);
+
+  // Prevent body scroll when menu is open
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isOpen]);
+
+  // Close menu when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        isOpen &&
+        menuRef.current &&
+        !menuRef.current.contains(event.target as Node) &&
+        buttonRef.current &&
+        !buttonRef.current.contains(event.target as Node)
+      ) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, [isOpen]);
+
+  const toggleMenu = () => setIsOpen((prev) => !prev);
+  const closeMenu = () => setIsOpen(false);
 
   return (
     <header className="sticky top-0 z-50 border-b border-slate-200/70 bg-white/80 backdrop-blur-xl">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
-        <div>
+        <div className="min-w-0">
           <Link
             href="/"
-            className="text-xl font-bold tracking-tight text-slate-900"
+            className="text-xl font-bold tracking-tight text-slate-900 truncate"
           >
             {profile.name}
           </Link>
 
-          <p className="text-sm text-slate-500">{profile.headline}</p>
+          <p className="text-sm text-slate-500 truncate">{profile.headline}</p>
         </div>
 
         {/* Desktop Navigation */}
@@ -30,7 +77,7 @@ export function Navbar() {
             <Link
               key={item.name}
               href={item.href}
-              className="text-sm font-medium text-slate-600 transition hover:text-blue-600"
+              className="text-sm font-medium text-slate-600 transition hover:text-blue-600 whitespace-nowrap"
             >
               {item.name}
             </Link>
@@ -43,7 +90,7 @@ export function Navbar() {
             href={profile.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm font-medium text-slate-600 hover:text-black transition-colors"
+            className="text-sm font-medium text-slate-600 hover:text-black transition-colors whitespace-nowrap"
           >
             GitHub
           </a>
@@ -51,7 +98,7 @@ export function Navbar() {
             href={profile.linkedin}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors"
+            className="text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors whitespace-nowrap"
           >
             LinkedIn
           </a>
@@ -59,8 +106,9 @@ export function Navbar() {
 
         {/* Mobile Menu Button */}
         <button
+          ref={buttonRef}
           className="lg:hidden flex h-10 w-10 items-center justify-center rounded-lg text-slate-600 hover:bg-slate-100 transition-colors"
-          onClick={() => setIsOpen(!isOpen)}
+          onClick={toggleMenu}
           aria-expanded={isOpen}
           aria-controls="mobile-menu"
           aria-label={isOpen ? "Close menu" : "Open menu"}
@@ -71,21 +119,22 @@ export function Navbar() {
 
       {/* Mobile Menu Drawer */}
       <div
+        ref={menuRef}
         id="mobile-menu"
-        className={`lg:hidden transition-all duration-300 ease-in-out overflow-hidden ${
-          isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+        className={`lg:hidden fixed inset-x-0 top-20 border-t border-slate-200 bg-white shadow-xl transition-all duration-200 ease-in-out z-40 ${
+          isOpen ? "max-h-[calc(100vh-5rem)] opacity-100" : "max-h-0 opacity-0 pointer-events-none"
         }`}
         role="navigation"
         aria-label="Mobile navigation"
       >
-        <div className="px-6 pb-6 border-t border-slate-200 bg-white">
-          <nav className="space-y-4" role="list">
+        <div className="px-6 py-6 overflow-y-auto max-h-[calc(100vh-5rem)]">
+          <nav className="space-y-2" role="list">
             {navigation.map((item) => (
               <li key={item.name}>
                 <Link
                   href={item.href}
-                  className="block py-3 text-lg font-medium text-slate-600 hover:text-blue-600 transition-colors"
-                  onClick={() => setIsOpen(false)}
+                  className="block py-4 text-lg font-medium text-slate-600 hover:text-blue-600 transition-colors rounded-lg hover:bg-slate-50"
+                  onClick={closeMenu}
                 >
                   {item.name}
                 </Link>
@@ -93,7 +142,7 @@ export function Navbar() {
             ))}
           </nav>
 
-          <div className="mt-8 flex flex-col gap-4">
+          <div className="mt-6 border-t border-slate-200 pt-6 flex flex-col gap-3">
             <a
               href={profile.github}
               target="_blank"

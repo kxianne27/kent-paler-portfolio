@@ -2,9 +2,11 @@ import { profile } from "@/data/profile";
 import { Section } from "@/components/layout/Section";
 import { SectionTitle } from "@/components/ui/SectionTitle";
 import { Container } from "@/components/layout/Container";
-import { Mail, MapPin, Clock } from "lucide-react";
+import { Mail, MapPin, Clock, Calendar } from "lucide-react";
 
 export function Contact() {
+  const calendlyUrl = process.env.NEXT_PUBLIC_CALENDLY_URL;
+
   return (
     <Section id="contact">
       <Container>
@@ -19,6 +21,33 @@ export function Contact() {
           technical collaborations. Whether you have a project in mind or just
           want to connect, feel free to reach out.
         </p>
+
+        {/* Calendly CTA */}
+        {calendlyUrl && (
+          <div className="mt-10 rounded-2xl bg-blue-50 border border-blue-100 p-6">
+            <div className="flex items-center justify-between gap-4 flex-wrap">
+              <div className="flex items-center gap-3">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-blue-100 text-blue-600">
+                  <Calendar className="size-5" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold text-slate-900">Schedule a Meeting</h3>
+                  <p className="mt-1 text-sm text-slate-600">
+                    Book a 30-minute call to discuss your project
+                  </p>
+                </div>
+              </div>
+              <a
+                href={calendlyUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-xl bg-blue-600 px-5 py-2.5 font-semibold text-white transition hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:ring-offset-2 whitespace-nowrap"
+              >
+                Book a Meeting
+              </a>
+            </div>
+          </div>
+        )}
 
         <div className="mt-16 grid gap-12 lg:grid-cols-2">
           {/* Contact Info */}

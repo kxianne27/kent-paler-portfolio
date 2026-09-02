@@ -20,6 +20,18 @@ export const skills = [
     items: ["Git/GitHub", "Vite", "Composer", "npm", "VS Code", "SQL Server Management Studio", "MySQL Workbench"],
   },
   {
+    name: "AI & AI-Assisted Development",
+    items: [
+      "AI-Assisted Software Development",
+      "Claude Code",
+      "OpenAI API Development",
+      "Ollama / Local LLM Development",
+      "AI Coding Workflows",
+      "AI-Assisted Debugging & Code Generation",
+      "Multi-Model AI Routing (OmniRoute)",
+    ],
+  },
+  {
     name: "Domains",
     items: [
       "Enterprise Information Systems",
@@ -46,4 +58,7 @@ export const techStack = [
   "Tailwind CSS",
   "Git",
   "VB.NET",
+  "Claude Code",
+  "OpenAI API",
+  "Ollama",
 ];
