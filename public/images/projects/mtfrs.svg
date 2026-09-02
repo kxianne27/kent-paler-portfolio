@@ -1,0 +1,161 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a5f;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2c5282;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cardGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0.02" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1600" height="900" fill="url(#bgGradient)"/>
+
+  <!-- Grid pattern -->
+  <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+    <path d="M 50 0 L 0 0 0 50" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+  </pattern>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+
+  <!-- Header bar -->
+  <rect x="80" y="60" width="1440" height="70" rx="12" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+  <text x="120" y="108" font-family="system-ui, sans-serif" font-size="24" font-weight="600" fill="white">MTFRS — Motorized Tricycle Franchising Management System</text>
+  <text x="1420" y="108" font-family="system-ui, sans-serif" font-size="14" fill="rgba(255,255,255,0.6)" text-anchor="end">LGU General Santos City • 2013</text>
+
+  <!-- Sidebar -->
+  <rect x="80" y="160" width="280" height="660" rx="12" fill="url(#cardGradient)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="120" y="200" font-family="system-ui, sans-serif" font-size="16" font-weight="600" fill="white">MODULES</text>
+  <line x1="100" y1="210" x2="340" y2="210" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+
+  <!-- Module items -->
+  <g font-family="system-ui, sans-serif" font-size="14" fill="rgba(255,255,255,0.9)">
+    <text x="110" y="245">📋 Franchise Application</text>
+    <text x="110" y="280">👤 Applicant Registry</text>
+    <text x="110" y="315">📄 Document Management</text>
+    <text x="110" y="350">✅ Approval Workflow</text>
+    <text x="110" y="385">💰 Fee Assessment</text>
+    <text x="110" y="420">📊 Reports & Analytics</text>
+    <text x="110" y="455">👥 User Management</text>
+    <text x="110" y="490">🔍 Search & Lookup</text>
+    <text x="110" y="525">📈 Dashboard</text>
+    <text x="110" y="560">⚙️ System Settings</text>
+  </g>
+
+  <!-- Main content area -->
+  <rect x="390" y="160" width="1130" height="310" rx="12" fill="url(#cardGradient)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="430" y="200" font-family="system-ui, sans-serif" font-size="18" font-weight="600" fill="white">FRANCHISE APPLICATION FORM</text>
+
+  <!-- Form fields -->
+  <g font-family="system-ui, sans-serif" font-size="13" fill="rgba(255,255,255,0.7)">
+    <rect x="440" y="220" width="320" height="40" rx="6" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+    <text x="450" y="247">Applicant Name: ___________________________</text>
+
+    <rect x="790" y="220" width="320" height="40" rx="6" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+    <text x="800" y="247">Contact Number: ___________________________</text>
+
+    <rect x="1140" y="220" width="320" height="40" rx="6" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+    <text x="1150" y="247">Tricycle Plate No: ___________________________</text>
+
+    <rect x="440" y="280" width="670" height="40" rx="6" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+    <text x="450" y="307">Address: ________________________________________________________________________</text>
+
+    <rect x="1140" y="280" width="320" height="40" rx="6" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+    <text x="1150" y="307">Barangay: ___________________________</text>
+
+    <rect x="440" y="340" width="320" height="40" rx="6" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+    <text x="450" y="367">Franchise Type: ▼ New  ▼ Renewal  ▼ Transfer</text>
+
+    <rect x="790" y="340" width="320" height="40" rx="6" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+    <text x="800" y="367">Route Code: ___________________________</text>
+
+    <rect x="1140" y="340" width="320" height="40" rx="6" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+    <text x="1150" y="367">Validity: ___________________________</text>
+  </g>
+
+  <!-- Action buttons -->
+  <rect x="440" y="400" width="140" height="44" rx="8" fill="#3b82f6" stroke="none"/>
+  <text x="510" y="429" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="white" text-anchor="middle">Submit</text>
+
+  <rect x="600" y="400" width="140" height="44" rx="8" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+  <text x="670" y="429" font-family="system-ui, sans-serif" font-size="14" font-weight="500" fill="rgba(255,255,255,0.9)" text-anchor="middle">Save Draft</text>
+
+  <rect x="760" y="400" width="140" height="44" rx="8" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+  <text x="830" y="429" font-family="system-ui, sans-serif" font-size="14" font-weight="500" fill="rgba(255,255,255,0.9)" text-anchor="middle">Clear</text>
+
+  <!-- Status badge -->
+  <rect x="1300" y="400" width="160" height="44" rx="8" fill="#10b981" stroke="none"/>
+  <text x="1380" y="429" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="white" text-anchor="middle">Status: PENDING</text>
+
+  <!-- Data grid -->
+  <rect x="390" y="500" width="1130" height="320" rx="12" fill="url(#cardGradient)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="430" y="540" font-family="system-ui, sans-serif" font-size="18" font-weight="600" fill="white">APPLICATION REGISTRY</text>
+  <text x="1450" y="540" font-family="system-ui, sans-serif" font-size="13" fill="rgba(255,255,255,0.5)" text-anchor="end">Showing 1-10 of 12,847 records</text>
+
+  <!-- Table header -->
+  <rect x="410" y="555" width="1090" height="40" rx="6" fill="rgba(255,255,255,0.08)"/>
+  <g font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="rgba(255,255,255,0.8)">
+    <text x="430" y="580">ID</text>
+    <text x="520" y="580">APPLICANT</text>
+    <text x="720" y="580">PLATE NO.</text>
+    <text x="860" y="580">ROUTE</text>
+    <text x="980" y="580">TYPE</text>
+    <text x="1080" y="580">STATUS</text>
+    <text x="1200" y="580">DATE FILED</text>
+    <text x="1340" y="580">ACTIONS</text>
+  </g>
+
+  <!-- Table rows -->
+  <g font-family="system-ui, sans-serif" font-size="12" fill="rgba(255,255,255,0.9)">
+    <text x="430" y="615">MTR-2024-001</text>
+    <text x="520" y="615">Santos, Juan D.</text>
+    <text x="720" y="615">ABC-1234</text>
+    <text x="860" y="615">Route 05</text>
+    <text x="980" y="615">New</text>
+    <text x="1080" y="615"><tspan fill="#fbbf24">●</tspan> Pending</text>
+    <text x="1200" y="615">Jan 15, 2024</text>
+    <text x="1340" y="615"><tspan fill="#3b82f6">View</tspan> | <tspan fill="#10b981">Approve</tspan></text>
+
+    <text x="430" y="645">MTR-2024-002</text>
+    <text x="520" y="645">Reyes, Maria L.</text>
+    <text x="720" y="645">XYZ-5678</text>
+    <text x="860" y="645">Route 12</text>
+    <text x="980" y="645">Renewal</text>
+    <text x="1080" y="645"><tspan fill="#10b981">●</tspan> Approved</text>
+    <text x="1200" y="645">Jan 14, 2024</text>
+    <text x="1340" y="645"><tspan fill="#3b82f6">View</tspan> | <tspan fill="#6b7280">Print</tspan></text>
+
+    <text x="430" y="675">MTR-2024-003</text>
+    <text x="520" y="675">Garcia, Pedro M.</text>
+    <text x="720" y="675">DEF-9012</text>
+    <text x="860" y="675">Route 03</text>
+    <text x="980" y="675">Transfer</text>
+    <text x="1080" y="675"><tspan fill="#ef4444">●</tspan> Rejected</text>
+    <text x="1200" y="675">Jan 13, 2024</text>
+    <text x="1340" y="675"><tspan fill="#3b82f6">View</tspan> | <tspan fill="#fbbf24">Appeal</tspan></text>
+
+    <text x="430" y="705">MTR-2024-004</text>
+    <text x="520" y="705">Lopez, Ana R.</text>
+    <text x="720" y="705">GHI-3456</text>
+    <text x="860" y="705">Route 08</text>
+    <text x="980" y="705">New</text>
+    <text x="1080" y="705"><tspan fill="#10b981">●</tspan> Approved</text>
+    <text x="1200" y="705">Jan 12, 2024</text>
+    <text x="1340" y="705"><tspan fill="#3b82f6">View</tspan> | <tspan fill="#6b7280">Print</tspan></text>
+
+    <text x="430" y="735">MTR-2024-005</text>
+    <text x="520" y="735">Torres, Carlos V.</text>
+    <text x="720" y="735">JKL-7890</text>
+    <text x="860" y="735">Route 01</text>
+    <text x="980" y="735">New</text>
+    <text x="1080" y="735"><tspan fill="#fbbf24">●</tspan> For Review</text>
+    <text x="1200" y="735">Jan 11, 2024</text>
+    <text x="1340" y="735"><tspan fill="#3b82f6">View</tspan> | <tspan fill="#fbbf24">Review</tspan></text>
+  </g>
+
+  <!-- Footer label -->
+  <text x="800" y="850" font-family="system-ui, sans-serif" font-size="13" fill="rgba(255,255,255,0.4)" text-anchor="middle">
+    Representative interface visualization • Portfolio visualization based on system scope
+  </text>
+</svg>

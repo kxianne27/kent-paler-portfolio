@@ -1,0 +1,166 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#064e3b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#065f46;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cardGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0.02" />
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#34d399;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1600" height="900" fill="url(#bgGradient)"/>
+
+  <!-- Grid pattern -->
+  <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+    <path d="M 50 0 L 0 0 0 50" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+  </pattern>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+
+  <!-- Header bar -->
+  <rect x="80" y="60" width="1440" height="70" rx="12" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+  <text x="120" y="108" font-family="system-ui, sans-serif" font-size="24" font-weight="600" fill="white">CHIS — City Health Information System</text>
+  <text x="1420" y="108" font-family="system-ui, sans-serif" font-size="14" fill="rgba(255,255,255,0.6)" text-anchor="end">City Health Office GenSan • 2013</text>
+
+  <!-- Top stats cards -->
+  <g font-family="system-ui, sans-serif">
+    <rect x="80" y="150" width="350" height="120" rx="12" fill="url(#cardGradient)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <text x="110" y="190" font-size="13" font-weight="500" fill="rgba(255,255,255,0.7)">TOTAL PATIENTS</text>
+    <text x="110" y="235" font-size="36" font-weight="700" fill="white">87,432</text>
+    <text x="380" y="235" font-size="14" font-weight="500" fill="#34d399" text-anchor="end">↑ 12.3%</text>
+
+    <rect x="460" y="150" width="350" height="120" rx="12" fill="url(#cardGradient)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <text x="490" y="190" font-size="13" font-weight="500" fill="rgba(255,255,255,0.7)">HEALTH CARDS ISSUED</text>
+    <text x="490" y="235" font-size="36" font-weight="700" fill="white">45,218</text>
+    <text x="760" y="235" font-size="14" font-weight="500" fill="#34d399" text-anchor="end">↑ 8.7%</text>
+
+    <rect x="840" y="150" width="350" height="120" rx="12" fill="url(#cardGradient)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <text x="870" y="190" font-size="13" font-weight="500" fill="rgba(255,255,255,0.7)">MEDICAL CLEARANCES</text>
+    <text x="870" y="235" font-size="36" font-weight="700" fill="white">12,654</text>
+    <text x="1140" y="235" font-size="14" font-weight="500" fill="#34d399" text-anchor="end">↑ 15.2%</text>
+
+    <rect x="1220" y="150" width="300" height="120" rx="12" fill="url(#cardGradient)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <text x="1250" y="190" font-size="13" font-weight="500" fill="rgba(255,255,255,0.7)">DOH REPORTS</text>
+    <text x="1250" y="235" font-size="36" font-weight="700" fill="white">24</text>
+    <text x="1470" y="235" font-size="14" font-weight="500" fill="#34d399" text-anchor="end">This Year</text>
+  </g>
+
+  <!-- Sidebar -->
+  <rect x="80" y="300" width="280" height="520" rx="12" fill="url(#cardGradient)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="120" y="340" font-family="system-ui, sans-serif" font-size="16" font-weight="600" fill="white">MODULES</text>
+  <line x1="100" y1="350" x2="340" y2="350" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+
+  <g font-family="system-ui, sans-serif" font-size="14" fill="rgba(255,255,255,0.9)">
+    <text x="110" y="385">🏥 Patient Registration</text>
+    <text x="110" y="420">🪪 Health Card Issuance</text>
+    <text x="110" y="455">📋 Medical Clearance</text>
+    <text x="110" y="490">🧪 Laboratory Records</text>
+    <text x="110" y="525">🖨️ Certificate Printing</text>
+    <text x="110" y="560">💳 Billing & Payments</text>
+    <text x="110" y="595">📊 DOH Statistical Reports</text>
+    <text x="110" y="630">👥 User Management</text>
+    <text x="110" y="665">📈 Analytics Dashboard</text>
+    <text x="110" y="700">⚙️ System Configuration</text>
+  </g>
+
+  <!-- Patient Search & Registration -->
+  <rect x="390" y="300" width="700" height="520" rx="12" fill="url(#cardGradient)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="430" y="340" font-family="system-ui, sans-serif" font-size="18" font-weight="600" fill="white">PATIENT REGISTRATION</text>
+
+  <!-- Search bar -->
+  <rect x="430" y="360" width="620" height="48" rx="8" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <text x="450" y="392" font-family="system-ui, sans-serif" font-size="14" fill="rgba(255,255,255,0.5)">Search patient by name, ID, or health card number...</text>
+  <rect x="980" y="360" width="70" height="48" rx="8" fill="url(#accentGradient)"/>
+  <text x="1015" y="392" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="white" text-anchor="middle">Search</text>
+
+  <!-- Patient form -->
+  <g font-family="system-ui, sans-serif" font-size="13" fill="rgba(255,255,255,0.7)">
+    <rect x="430" y="430" width="300" height="44" rx="6" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+    <text x="440" y="459">Last Name: ______________________</text>
+
+    <rect x="750" y="430" width="300" height="44" rx="6" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+    <text x="760" y="459">First Name: ______________________</text>
+
+    <rect x="430" y="490" width="140" height="44" rx="6" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+    <text x="440" y="519">MI: _____</text>
+
+    <rect x="590" y="490" width="220" height="44" rx="6" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+    <text x="600" y="519">Birthdate: ______________</text>
+
+    <rect x="830" y="490" width="220" height="44" rx="6" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+    <text x="840" y="519">Age: ______ Sex: ▼ M  ▼ F</text>
+
+    <rect x="430" y="550" width="620" height="44" rx="6" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+    <text x="440" y="579">Address: _______________________________________________________________</text>
+
+    <rect x="430" y="610" width="300" height="44" rx="6" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+    <text x="440" y="639">Contact No: ______________________</text>
+
+    <rect x="750" y="610" width="300" height="44" rx="6" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+    <text x="760" y="639">PhilHealth No: ______________________</text>
+
+    <rect x="430" y="670" width="300" height="44" rx="6" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+    <text x="440" y="699">Barangay: ▼ Select Barangay</text>
+
+    <rect x="750" y="670" width="300" height="44" rx="6" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+    <text x="760" y="699">Purpose: ▼ Health Card  ▼ Medical Cert  ▼ Lab</text>
+  </g>
+
+  <!-- Action buttons -->
+  <rect x="430" y="730" width="150" height="48" rx="8" fill="url(#accentGradient)"/>
+  <text x="505" y="761" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="white" text-anchor="middle">Register</rect>
+  <rect x="600" y="730" width="150" height="48" rx="8" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+  <text x="675" y="761" font-family="system-ui, sans-serif" font-size="14" font-weight="500" fill="rgba(255,255,255,0.9)" text-anchor="middle">Print Card</rect>
+  <rect x="770" y="730" width="150" height="48" rx="8" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+  <text x="845" y="761" font-family="system-ui, sans-serif" font-size="14" font-weight="500" fill="rgba(255,255,255,0.9)" text-anchor="middle">Clear</rect>
+
+  <!-- Patient list / records -->
+  <rect x="1120" y="300" width="400" height="520" rx="12" fill="url(#cardGradient)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="1160" y="340" font-family="system-ui, sans-serif" font-size="18" font-weight="600" fill="white">RECENT PATIENTS</text>
+  <text x="1460" y="340" font-family="system-ui, sans-serif" font-size="12" fill="rgba(255,255,255,0.5)" text-anchor="end">Today: 127</text>
+
+  <g font-family="system-ui, sans-serif" font-size="12" fill="rgba(255,255,255,0.9)">
+    <rect x="1140" y="355" width="360" height="1" fill="rgba(255,255,255,0.1)"/>
+    <text x="1150" y="385">Santos, Maria L.</text>
+    <text x="1150" y="405" fill="rgba(255,255,255,0.6)">HC-2024-001234 • Health Card • 10:32 AM</text>
+
+    <rect x="1140" y="415" width="360" height="1" fill="rgba(255,255,255,0.1)"/>
+    <text x="1150" y="445">Reyes, Juan D.</text>
+    <text x="1150" y="465" fill="rgba(255,255,255,0.6)">HC-2024-001235 • Medical Cert • 10:45 AM</text>
+
+    <rect x="1140" y="475" width="360" height="1" fill="rgba(255,255,255,0.1)"/>
+    <text x="1150" y="505">Garcia, Ana R.</text>
+    <text x="1150" y="525" fill="rgba(255,255,255,0.6)">HC-2024-001236 • Laboratory • 11:02 AM</text>
+
+    <rect x="1140" y="535" width="360" height="1" fill="rgba(255,255,255,0.1)"/>
+    <text x="1150" y="565">Lopez, Pedro M.</text>
+    <text x="1150" y="585" fill="rgba(255,255,255,0.6)">HC-2024-001237 • Health Card • 11:18 AM</text>
+
+    <rect x="1140" y="595" width="360" height="1" fill="rgba(255,255,255,0.1)"/>
+    <text x="1150" y="625">Torres, Carmen V.</text>
+    <text x="1150" y="645" fill="rgba(255,255,255,0.6)">HC-2024-001238 • Medical Cert • 11:33 AM</text>
+
+    <rect x="1140" y="655" width="360" height="1" fill="rgba(255,255,255,0.1)"/>
+    <text x="1150" y="685">Flores, Roberto T.</text>
+    <text x="1150" y="705" fill="rgba(255,255,255,0.6)">HC-2024-001239 • Health Card • 11:47 AM</text>
+
+    <rect x="1140" y="715" width="360" height="1" fill="rgba(255,255,255,0.1)"/>
+    <text x="1150" y="745">Aquino, Lucia S.</text>
+    <text x="1150" y="765" fill="rgba(255,255,255,0.6)">HC-2024-001240 • Laboratory • 12:01 PM</text>
+
+    <rect x="1140" y="775" width="360" height="1" fill="rgba(255,255,255,0.1)"/>
+    <text x="1150" y="805">Villanueva, Jose P.</text>
+    <text x="1150" y="825" fill="rgba(255,255,255,0.6)">HC-2024-001241 • Health Card • 12:15 PM</text>
+  </g>
+
+  <!-- Footer label -->
+  <text x="800" y="850" font-family="system-ui, sans-serif" font-size="13" fill="rgba(255,255,255,0.4)" text-anchor="middle">
+    Representative interface visualization • Portfolio visualization based on system scope
+  </text>
+</svg>

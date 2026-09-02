@@ -1,6 +1,6 @@
 import { projects } from "@/data/projects";
 import { Container } from "@/components/layout/Container";
-import { Section } from "@/components/ui/Section";
+import { Section } from "@/components/layout/Section";
 import { SectionTitle } from "@/components/ui/SectionTitle";
 import { ProjectCard } from "./ProjectCard";
 

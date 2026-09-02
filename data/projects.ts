@@ -55,7 +55,7 @@ export const projects: Project[] = [
 
     featured: true,
 
-    image: "/images/projects/mtfrs.jpg",
+    image: "/images/projects/mtfrs.svg",
 
     client: "Local Government Unit - General Santos City",
 
@@ -145,10 +145,142 @@ export const projects: Project[] = [
 
     featured: true,
 
-    image: "/images/projects/chis.jpg",
+    image: "/images/projects/chis.svg",
 
     client: "City Health Office • General Santos City",
 
     category: "Healthcare Information System",
+  },
+
+  {
+    slug: "usims",
+
+    title: "USIMS",
+
+    subtitle: "Unified School Information Management System",
+
+    overview:
+      "A Laravel-based school information management system currently under active development. USIMS is designed to modernize and unify school operations by providing a comprehensive platform for student management, enrollment, attendance tracking, grade management, and government reporting compliance. The system replaces fragmented manual processes and legacy tools with a centralized, role-based web application built on modern PHP practices.",
+
+    challenge: [
+      {
+        title: "Fragmented School Operations",
+        items: [
+          "Student records scattered across multiple spreadsheets and paper files.",
+          "Enrollment process is manual, time-consuming, and error-prone.",
+          "No centralized system for tracking student progression across grade levels.",
+          "Teacher assignments and class scheduling managed through informal channels.",
+        ],
+      },
+      {
+        title: "Government Reporting Compliance",
+        items: [
+          "SF1 (School Form 1) and other DepEd reports require manual compilation.",
+          "Data inconsistencies across sources lead to reporting delays and rejections.",
+          "No audit trail for enrollment changes, transfers, or dropouts.",
+          "Multiple reporting deadlines throughout the school year create bottlenecks.",
+        ],
+      },
+      {
+        title: "Legacy System Limitations",
+        items: [
+          "Existing tools are desktop-based, offline, and lack multi-user collaboration.",
+          "No role-based access control — all users have full data access.",
+          "Data backup and recovery processes are informal and unreliable.",
+          "Technical debt from years of ad-hoc modifications makes maintenance difficult.",
+        ],
+      },
+      {
+        title: "Scalability & Modernization Needs",
+        items: [
+          "Growing student population exceeds capacity of current tools.",
+          "Need for parent/guardian portal for transparency and engagement.",
+          "Mobile-responsive design required for field use by teachers.",
+          "Integration potential with national learner databases (LIS, BOSY/EOSY).",
+        ],
+      },
+    ],
+
+    solution:
+      "Developing a comprehensive, Laravel-based web application that centralizes all school information management functions. The system implements a modular architecture with role-based access control (Admin, Registrar, Teacher, Adviser), standardized UI components, and automated government report generation. Built with Laravel 13, PHP 8.3, MySQL, AdminLTE, and Vite, following modern development practices including testing infrastructure, database migrations, and Git-based version control.",
+
+    impact: [
+      "Centralized student information with single source of truth",
+      "Automated SF1 and government report generation",
+      "Role-based access control for data privacy and security",
+      "Streamlined enrollment workflow reducing processing time",
+      "Real-time attendance tracking with adviser dashboards",
+      "Foundation for parent portal and mobile access (planned)",
+      "Standardized codebase with testing infrastructure for maintainability",
+    ],
+
+    technologies: ["Laravel 13", "PHP 8.3", "MySQL", "AdminLTE", "Vite", "JavaScript", "Git/GitHub", "Tailwind CSS"],
+
+    modules: [
+      "Master Data Management (School Year, Grade Levels, Sections, Subjects)",
+      "Student Management (Enrollment, Transfers, Promotion, Graduation)",
+      "SF1 Import & Validation (DepEd School Form 1 processing)",
+      "Enrollment Management (Old/New/Transferee/Returnee workflows)",
+      "Teacher & Class Assignment (Advisory, Subject Teaching Loads)",
+      "Attendance Tracking (Daily, Summary, Adviser Dashboard)",
+      "Grade Management (Quarterly Grades, Report Cards, Ranking)",
+      "Reports & Analytics (SF1, SF2, SF3, SF5, EOSY, BOSY)",
+      "User Management & Role-Based Access Control",
+      "System Settings & Audit Trail",
+    ],
+
+    responsibilities: [
+      "System Architecture & Database Design",
+      "Laravel Backend Development (Models, Controllers, Services, Policies)",
+      "Frontend Development (Blade, AdminLTE, Alpine.js, Tailwind)",
+      "Database Migrations, Seeders, Factories",
+      "Automated Testing (Pest, PHPUnit, Feature/Unit Tests)",
+      "SF1 Import Logic & Validation Rules",
+      "Government Report Generation (PDF/Excel)",
+      "Role-Based Access Control Implementation",
+      "Deployment Configuration (Docker, CI/CD)",
+      "Technical Documentation & User Guides",
+    ],
+
+    architecture: "Laravel 13 Modular Monolith with Service Layer, Repository Pattern, and Policy-Based Authorization",
+
+    role: "Full-Stack Developer & System Architect",
+
+    year: "2024 – Present",
+
+    featured: true,
+
+    image: "/images/projects/usims.svg",
+
+    client: "General Santos City National Secondary School of Arts and Trades",
+
+    category: "Education Information System",
+
+    status: "under-development",
+
+    progress: {
+      completed: [
+        "Master Data (School Year, Grade Levels, Sections, Subjects)",
+        "Student Management (CRUD, Enrollment Status, Transfers)",
+        "SF1 Import (Parser, Validation, Preview, Commit)",
+        "Database Architecture (Migrations, Relationships, Indexes)",
+        "Testing Infrastructure (Pest, Factories, Feature Tests)",
+        "Standardized UI (AdminLTE, Blade Components, Tailwind)",
+        "User Authentication & Role-Based Access Control",
+        "Audit Trail & Activity Logging",
+      ],
+      inDevelopment: [
+        "Enrollment Workflows (Old/New/Transferee/Returnee)",
+        "Teacher/Class Assignment (Advisory, Teaching Loads)",
+        "Attendance (Daily Recording, Summary, Adviser Dashboard)",
+      ],
+      planned: [
+        "Grade Management (Quarterly, Report Cards, Ranking)",
+        "Reports (SF1, SF2, SF3, SF5, EOSY, BOSY, Custom)",
+        "Parent/Guardian Portal",
+        "Mobile-Responsive Teacher Interface",
+        "LIS/BOSY/EOSY API Integration",
+      ],
+    },
   },
 ];

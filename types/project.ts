@@ -1,3 +1,9 @@
+export interface ProjectProgress {
+  completed: string[];
+  inDevelopment: string[];
+  planned: string[];
+}
+
 export interface Project {
   slug: string;
 
@@ -35,4 +41,8 @@ export interface Project {
   featured: boolean;
 
   image?: string;
+
+  status?: "completed" | "under-development" | "planned";
+
+  progress?: ProjectProgress;
 }

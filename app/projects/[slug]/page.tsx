@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import { projects } from "@/data/projects";
-import { Container } from "@/components/ui/Container";
+import { Container } from "@/components/layout/Container";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -33,7 +33,7 @@ export default async function ProjectPage({ params }: Props) {
       <div className="border-b border-slate-200 pb-14">
         <div className="mb-14 overflow-hidden rounded-3xl shadow-xl">
           <Image
-            src={project.image ?? "/images/projects/placeholder.jpg"}
+            src={project.image ?? "/images/projects/placeholder.svg"}
             alt={project.title}
             width={1600}
             height={900}
@@ -50,6 +50,18 @@ export default async function ProjectPage({ params }: Props) {
           <span className="rounded-full bg-blue-100 px-4 py-2 text-sm font-medium text-blue-700">
             {project.category}
           </span>
+
+          {project.status === "under-development" && (
+            <span className="rounded-full bg-amber-100 px-4 py-2 text-sm font-medium text-amber-800 animate-pulse">
+              🚧 Under Development
+            </span>
+          )}
+
+          {project.status === "planned" && (
+            <span className="rounded-full bg-slate-100 px-4 py-2 text-sm font-medium text-slate-700">
+              📋 Planned
+            </span>
+          )}
         </div>
 
         <h1 className="mt-8 text-5xl font-bold tracking-tight text-slate-900">
@@ -210,6 +222,62 @@ export default async function ProjectPage({ params }: Props) {
           ))}
         </div>
       </section>
+
+      {project.status === "under-development" && project.progress && (
+        <section className="mt-20">
+          <h2 className="text-3xl font-bold text-slate-900">Development Progress</h2>
+
+          <div className="mt-10 grid gap-6 lg:grid-cols-3">
+            {/* Completed */}
+            <div className="rounded-2xl border border-green-200 bg-green-50 p-6">
+              <h3 className="flex items-center gap-2 text-lg font-semibold text-green-800">
+                <span className="size-2 rounded-full bg-green-500" />
+                Completed ({project.progress.completed.length})
+              </h3>
+              <ul className="mt-4 space-y-2">
+                {project.progress.completed.map((item) => (
+                  <li key={item} className="flex items-center gap-2 text-green-700 text-sm">
+                    <span className="text-green-500">✓</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* In Development */}
+            <div className="rounded-2xl border border-amber-200 bg-amber-50 p-6">
+              <h3 className="flex items-center gap-2 text-lg font-semibold text-amber-800">
+                <span className="size-2 rounded-full bg-amber-500 animate-pulse" />
+                In Development ({project.progress.inDevelopment.length})
+              </h3>
+              <ul className="mt-4 space-y-2">
+                {project.progress.inDevelopment.map((item) => (
+                  <li key={item} className="flex items-center gap-2 text-amber-700 text-sm">
+                    <span className="text-amber-500">⟳</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Planned */}
+            <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6">
+              <h3 className="flex items-center gap-2 text-lg font-semibold text-slate-700">
+                <span className="size-2 rounded-full bg-slate-400" />
+                Planned / Future ({project.progress.planned.length})
+              </h3>
+              <ul className="mt-4 space-y-2">
+                {project.progress.planned.map((item) => (
+                  <li key={item} className="flex items-center gap-2 text-slate-600 text-sm">
+                    <span className="text-slate-400">○</span>
+                    <span className="italic">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </section>
+      )}
 
       <section className="mt-20 mb-20">
         <h2 className="text-3xl font-bold text-slate-900">Business Impact</h2>
