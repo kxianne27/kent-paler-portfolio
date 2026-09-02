@@ -6,6 +6,8 @@ import { Mail, MapPin, Clock, Calendar } from "lucide-react";
 
 export function Contact() {
   const calendlyUrl = process.env.NEXT_PUBLIC_CALENDLY_URL;
+  const formspreeEndpoint = process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT;
+  const isFormConfigured = Boolean(formspreeEndpoint);
 
   return (
     <Section id="contact">
@@ -109,108 +111,137 @@ export function Contact() {
               days.
             </p>
 
-            <form
-              className="mt-8 space-y-6"
-              action={process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT}
-              method="POST"
-            >
-              <div className="grid gap-6 sm:grid-cols-2">
-                <div>
-                  <label
-                    htmlFor="name"
-                    className="block text-sm font-medium text-slate-700"
-                  >
-                    Name *
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    required
-                    className="mt-2 block w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-slate-900 placeholder:text-slate-400 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20 transition-colors"
-                    placeholder="Your name"
-                  />
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="email"
-                    className="block text-sm font-medium text-slate-700"
-                  >
-                    Email *
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    required
-                    className="mt-2 block w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-slate-900 placeholder:text-slate-400 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20 transition-colors"
-                    placeholder="your@email.com"
-                  />
-                </div>
-              </div>
-
-              <div>
-                <label
-                  htmlFor="subject"
-                  className="block text-sm font-medium text-slate-700"
-                >
-                  Subject *
-                </label>
-                <select
-                  id="subject"
-                  name="subject"
-                  required
-                  className="mt-2 block w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-slate-900 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20 transition-colors"
-                >
-                  <option value="">Select a topic</option>
-                  <option value="project-inquiry">
-                    Project Inquiry
-                  </option>
-                  <option value="collaboration">
-                    Collaboration / Partnership
-                  </option>
-                  <option value="job-opportunity">
-                    Job Opportunity
-                  </option>
-                  <option value="technical-consulting">
-                    Technical Consulting
-                  </option>
-                  <option value="other">
-                    Other
-                  </option>
-                </select>
-              </div>
-
-              <div>
-                <label
-                  htmlFor="message"
-                  className="block text-sm font-medium text-slate-700"
-                >
-                  Message *
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  rows={6}
-                  required
-                  className="mt-2 block w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-slate-900 placeholder:text-slate-400 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20 transition-colors resize-none"
-                  placeholder="Describe your project, requirements, or how I can help..."
-                />
-              </div>
-
-              <button
-                type="submit"
-                className="w-full rounded-xl bg-blue-600 px-6 py-3 font-semibold text-white transition hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:ring-offset-2"
+            {isFormConfigured ? (
+              <form
+                className="mt-8 space-y-6"
+                action={formspreeEndpoint}
+                method="POST"
               >
-                Send Message
-              </button>
+                <div className="grid gap-6 sm:grid-cols-2">
+                  <div>
+                    <label
+                      htmlFor="name"
+                      className="block text-sm font-medium text-slate-700"
+                    >
+                      Name *
+                    </label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      required
+                      className="mt-2 block w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-slate-900 placeholder:text-slate-400 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20 transition-colors"
+                      placeholder="Your name"
+                    />
+                  </div>
 
-              <p className="text-center text-xs text-slate-500">
-                By submitting this form, you agree to the processing of your
-                data in accordance with our privacy practices.
-              </p>
-            </form>
+                  <div>
+                    <label
+                      htmlFor="email"
+                      className="block text-sm font-medium text-slate-700"
+                    >
+                      Email *
+                    </label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      required
+                      className="mt-2 block w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-slate-900 placeholder:text-slate-400 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20 transition-colors"
+                      placeholder="your@email.com"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label
+                    htmlFor="subject"
+                    className="block text-sm font-medium text-slate-700"
+                  >
+                    Subject *
+                  </label>
+                  <select
+                    id="subject"
+                    name="subject"
+                    required
+                    className="mt-2 block w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-slate-900 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20 transition-colors"
+                  >
+                    <option value="">Select a topic</option>
+                    <option value="project-inquiry">
+                      Project Inquiry
+                    </option>
+                    <option value="collaboration">
+                      Collaboration / Partnership
+                    </option>
+                    <option value="job-opportunity">
+                      Job Opportunity
+                    </option>
+                    <option value="technical-consulting">
+                      Technical Consulting
+                    </option>
+                    <option value="other">
+                      Other
+                    </option>
+                  </select>
+                </div>
+
+                <div>
+                  <label
+                    htmlFor="message"
+                    className="block text-sm font-medium text-slate-700"
+                  >
+                    Message *
+                  </label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows={6}
+                    required
+                    className="mt-2 block w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-slate-900 placeholder:text-slate-400 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20 transition-colors resize-none"
+                    placeholder="Describe your project, requirements, or how I can help..."
+                  />
+                </div>
+
+                <button
+                  type="submit"
+                  className="w-full rounded-xl bg-blue-600 px-6 py-3 font-semibold text-white transition hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:ring-offset-2"
+                >
+                  Send Message
+                </button>
+
+                <p className="text-center text-xs text-slate-500">
+                  By submitting this form, you agree to the processing of your
+                  data in accordance with our privacy practices.
+                </p>
+              </form>
+            ) : (
+              <div className="mt-8 rounded-xl bg-amber-50 border border-amber-200 p-6">
+                <div className="flex items-start gap-3">
+                  <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-amber-100 text-amber-600">
+                    <svg className="size-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 className="text-lg font-semibold text-amber-800">Contact Form Unavailable</h4>
+                    <p className="mt-2 text-amber-700">
+                      The contact form is not configured for this deployment. Please use email directly:
+                    </p>
+                    <p className="mt-2">
+                      <a
+                        href={`mailto:${profile.email}`}
+                        className="text-amber-700 underline hover:text-amber-900"
+                      >
+                        {profile.email}
+                      </a>
+                    </p>
+                    <p className="mt-3 text-sm text-amber-600">
+                      <strong>For administrators:</strong> Set the <code className="font-mono">NEXT_PUBLIC_FORMSPREE_ENDPOINT</code> environment variable in Vercel to enable the contact form.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </Container>
