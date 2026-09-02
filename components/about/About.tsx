@@ -1,48 +1,52 @@
+import { about } from "@/data/about";
+import { Section } from "@/components/layout/Section";
+import { SectionTitle } from "@/components/ui/SectionTitle";
+import { Container } from "@/components/layout/Container";
+import { CheckCircle } from "lucide-react";
+
 export function About() {
   return (
-    <section id="about" className="py-40 lg:py-52">
-      <div className="grid gap-16 lg:grid-cols-2 items-center">
-        <div>
-          <p className="text-blue-600 font-semibold uppercase tracking-[0.2em]">
-            About Me
-          </p>
+    <Section id="about">
+      <Container>
+        <div className="grid gap-16 lg:grid-cols-2 items-start">
+          <div>
+            <SectionTitle
+              eyebrow="About Me"
+              title={about.title}
+            />
 
-          <h2 className="mt-4 text-4xl font-bold text-slate-900">
-            Building Information Systems that Improve Public Services
-          </h2>
+            <div className="mt-8 space-y-6 text-lg leading-8 text-slate-600">
+              <p>{about.description.split('\n\n')[0]}</p>
+              <p>{about.description.split('\n\n')[1]}</p>
+            </div>
 
-          <p className="mt-8 text-lg leading-8 text-slate-600">
-            I am a Systems Analyst and Software Engineer with over a decade of
-            experience in the Philippine government. My work focuses on
-            enterprise application development, digital transformation,
-            automation, database design, and business process improvement.
-          </p>
+            <div className="mt-10 grid gap-8 sm:grid-cols-2">
+              {about.expertise.map((item) => (
+                <div key={item.title} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+                  <h3 className="font-semibold text-slate-900">{item.title}</h3>
+                  <p className="mt-2 text-slate-600">{item.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
 
-          <p className="mt-6 text-lg leading-8 text-slate-600">
-            Combining technical expertise with public administration enables me
-            to bridge technology and organizational needs, delivering solutions
-            that improve operational efficiency and service delivery.
-          </p>
+          <div className="rounded-3xl bg-slate-50 p-10 shadow-sm border border-slate-200">
+            <h3 className="flex items-center gap-2 text-xl font-bold text-slate-900">
+              <CheckCircle className="size-6 text-blue-600" />
+              Highlights
+            </h3>
+
+            <ul className="mt-8 space-y-4" role="list">
+              {about.highlights.map((highlight) => (
+                <li key={highlight} className="flex items-center gap-3 text-slate-700">
+                  <CheckCircle className="size-5 text-green-500 shrink-0" />
+                  <span className="text-lg">{highlight}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
-
-        <div className="rounded-3xl bg-slate-50 p-10 shadow-sm border border-slate-200">
-          <h3 className="text-xl font-bold">Highlights</h3>
-
-          <ul className="mt-8 space-y-5">
-            <li>✔ 10+ Years Government Service</li>
-
-            <li>✔ Enterprise Information Systems</li>
-
-            <li>✔ Database Design & SQL Development</li>
-
-            <li>✔ Digital Transformation Projects</li>
-
-            <li>✔ Systems Analysis & Process Automation</li>
-
-            <li>✔ Public Administration Background</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+      </Container>
+    </Section>
   );
 }

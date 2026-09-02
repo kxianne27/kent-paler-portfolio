@@ -1,0 +1,193 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e1e2f;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2d2d44;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cardGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.08" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0.02" />
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ff6b35;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f7931a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="completedGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#34d399;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="inDevGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fcd34d;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="plannedGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#6b7280;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#9ca3af;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1600" height="900" fill="url(#bgGradient)"/>
+
+  <!-- Grid pattern -->
+  <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+    <path d="M 50 0 L 0 0 0 50" fill="none" stroke="rgba(255,255,255,0.02)" stroke-width="1"/>
+  </pattern>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+
+  <!-- Header bar -->
+  <rect x="80" y="60" width="1440" height="70" rx="12" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="120" y="108" font-family="system-ui, sans-serif" font-size="24" font-weight="600" fill="white">USIMS — Unified School Information Management System</text>
+  <text x="1420" y="108" font-family="system-ui, sans-serif" font-size="14" fill="rgba(255,255,255,0.5)" text-anchor="end">GSCNSAT • Laravel 13 • 2024–Present</text>
+
+  <!-- Status Badge -->
+  <rect x="120" y="150" width="200" height="40" rx="8" fill="url(#inDevGradient)"/>
+  <text x="220" y="177" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#1e1e2f" text-anchor="middle">UNDER DEVELOPMENT</text>
+
+  <!-- Progress Overview Cards -->
+  <g font-family="system-ui, sans-serif">
+    <rect x="350" y="150" width="220" height="90" rx="12" fill="url(#cardGradient)" stroke="rgba(16,185,129,0.3)" stroke-width="1"/>
+    <text x="380" y="185" font-size="12" font-weight="500" fill="rgba(255,255,255,0.6)">COMPLETED</text>
+    <text x="380" y="215" font-size="28" font-weight="700" fill="#10b981">8</text>
+    <text x="380" y="235" font-size="12" fill="rgba(255,255,255,0.5)">modules</text>
+
+    <rect x="600" y="150" width="220" height="90" rx="12" fill="url(#cardGradient)" stroke="rgba(251,191,36,0.3)" stroke-width="1"/>
+    <text x="630" y="185" font-size="12" font-weight="500" fill="rgba(255,255,255,0.6)">IN DEVELOPMENT</text>
+    <text x="630" y="215" font-size="28" font-weight="700" fill="#fbbf24">3</text>
+    <text x="630" y="235" font-size="12" fill="rgba(255,255,255,0.5)">modules</text>
+
+    <rect x="850" y="150" width="220" height="90" rx="12" fill="url(#cardGradient)" stroke="rgba(107,114,128,0.3)" stroke-width="1"/>
+    <text x="880" y="185" font-size="12" font-weight="500" fill="rgba(255,255,255,0.6)">PLANNED</text>
+    <text x="880" y="215" font-size="28" font-weight="700" fill="#9ca3af">5</text>
+    <text x="880" y="235" font-size="12" fill="rgba(255,255,255,0.5)">modules</text>
+
+    <rect x="1100" y="150" width="220" height="90" rx="12" fill="url(#cardGradient)" stroke="rgba(59,130,246,0.3)" stroke-width="1"/>
+    <text x="1130" y="185" font-size="12" font-weight="500" fill="rgba(255,255,255,0.6)">TECH STACK</text>
+    <text x="1130" y="215" font-size="24" font-weight="700" fill="#3b82f6">8</text>
+    <text x="1130" y="235" font-size="12" fill="rgba(255,255,255,0.5)">technologies</text>
+
+    <rect x="1350" y="150" width="170" height="90" rx="12" fill="url(#cardGradient)" stroke="rgba(139,92,246,0.3)" stroke-width="1"/>
+    <text x="1380" y="185" font-size="12" font-weight="500" fill="rgba(255,255,255,0.6)">TESTS</text>
+    <text x="1380" y="215" font-size="28" font-weight="700" fill="#8b5cf6">94%</text>
+    <text x="1380" y="235" font-size="12" fill="rgba(255,255,255,0.5)">coverage</text>
+  </g>
+
+  <!-- Sidebar - Navigation -->
+  <rect x="80" y="270" width="280" height="550" rx="12" fill="url(#cardGradient)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="120" y="310" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="white">NAVIGATION</text>
+  <line x1="100" y1="320" x2="340" y2="320" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+
+  <g font-family="system-ui, sans-serif" font-size="13" fill="rgba(255,255,255,0.8)">
+    <text x="110" y="355">🏠 Dashboard</text>
+    <text x="110" y="390">👥 Student Management</text>
+    <text x="110" y="425">📋 Master Data</text>
+    <text x="110" y="460">📥 SF1 Import</text>
+    <text x="110" y="495">📝 Enrollment</text>
+    <text x="110" y="530">👨‍🏫 Teacher Assignment</text>
+    <text x="110" y="565">✅ Attendance</text>
+    <text x="110" y="600">📊 Grades</text>
+    <text x="110" y="635">📈 Reports</text>
+    <text x="110" y="670">👤 User Management</text>
+    <text x="110" y="705">⚙️ Settings</text>
+  </g>
+
+  <!-- Main Dashboard Area -->
+  <rect x="390" y="270" width="1130" height="260" rx="12" fill="url(#cardGradient)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="430" y="310" font-family="system-ui, sans-serif" font-size="18" font-weight="600" fill="white">DASHBOARD OVERVIEW</text>
+
+  <!-- Stats cards -->
+  <g font-family="system-ui, sans-serif">
+    <rect x="430" y="325" width="250" height="100" rx="10" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="450" y="355" font-size="12" font-weight="500" fill="rgba(255,255,255,0.6)">TOTAL STUDENTS</text>
+    <text x="450" y="395" font-size="32" font-weight="700" fill="white">2,847</text>
+    <text x="640" y="395" font-size="12" font-weight="500" fill="#10b981" text-anchor="end">Active: 2,712</text>
+
+    <rect x="710" y="325" width="250" height="100" rx="10" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="730" y="355" font-size="12" font-weight="500" fill="rgba(255,255,255,0.6)">ENROLLED (SY 2024-25)</text>
+    <text x="730" y="395" font-size="32" font-weight="700" fill="white">2,531</text>
+    <text x="920" y="395" font-size="12" font-weight="500" fill="#3b82f6" text-anchor="end">↑ 12% vs LY</text>
+
+    <rect x="990" y="325" width="250" height="100" rx="10" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="1010" y="355" font-size="12" font-weight="500" fill="rgba(255,255,255,0.6)">ATTENDANCE TODAY</text>
+    <text x="1010" y="395" font-size="32" font-weight="700" fill="white">94.2%</text>
+    <text x="1200" y="395" font-size="12" font-weight="500" fill="#10b981" text-anchor="end">Present: 2,384</text>
+
+    <rect x="1270" y="325" width="250" height="100" rx="10" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="1290" y="355" font-size="12" font-weight="500" fill="rgba(255,255,255,0.6)">PENDING REPORTS</text>
+    <text x="1290" y="395" font-size="32" font-weight="700" fill="#fbbf24">3</text>
+    <text x="1480" y="395" font-size="12" font-weight="500" fill="rgba(255,255,255,0.5)" text-anchor="end">SF1, SF2, SF5</text>
+  </g>
+
+  <!-- Student Management Panel -->
+  <rect x="390" y="550" width="700" height="270" rx="12" fill="url(#cardGradient)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="430" y="590" font-family="system-ui, sans-serif" font-size="18" font-weight="600" fill="white">STUDENT MANAGEMENT</text>
+  <text x="1030" y="590" font-family="system-ui, sans-serif" font-size="12" fill="rgba(255,255,255,0.4)" text-anchor="end">Status: ✅ Completed</text>
+
+  <!-- Search bar -->
+  <rect x="430" y="610" width="520" height="44" rx="8" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+  <text x="450" y="640" font-family="system-ui, sans-serif" font-size="13" fill="rgba(255,255,255,0.4)">Search students by name, LRN, or grade level...</text>
+  <rect x="980" y="610" width="90" height="44" rx="8" fill="url(#accentGradient)"/>
+  <text x="1025" y="640" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#1e1e2f" text-anchor="middle">Search</text>
+
+  <!-- Student table -->
+  <g font-family="system-ui, sans-serif" font-size="12" fill="rgba(255,255,255,0.8)">
+    <!-- Header -->
+    <rect x="430" y="670" width="640" height="36" rx="6" fill="rgba(255,255,255,0.05)"/>
+    <text x="440" y="693" font-weight="600" fill="rgba(255,255,255,0.7)">LRN</text>
+    <text x="550" y="693" font-weight="600" fill="rgba(255,255,255,0.7)">NAME</text>
+    <text x="750" y="693" font-weight="600" fill="rgba(255,255,255,0.7)">GRADE/SEC</text>
+    <text x="880" y="693" font-weight="600" fill="rgba(255,255,255,0.7)">STATUS</text>
+    <text x="1000" y="693" font-weight="600" fill="rgba(255,255,255,0.7)">ACTIONS</text>
+
+    <!-- Rows -->
+    <text x="440" y="725">123456789012</text>
+    <text x="550" y="725">Santos, Juan Miguel R.</text>
+    <text x="750" y="725">Grade 10 - Rizal</text>
+    <text x="880" y="725"><tspan fill="#10b981">●</tspan> Enrolled</text>
+    <text x="1000" y="725"><tspan fill="#3b82f6">View</tspan> | <tspan fill="#fbbf24">Edit</tspan></text>
+
+    <text x="440" y="755">123456789013</text>
+    <text x="550" y="755">Reyes, Maria Angelica D.</text>
+    <text x="750" y="755">Grade 9 - Bonifacio</text>
+    <text x="880" y="755"><tspan fill="#10b981">●</tspan> Enrolled</text>
+    <text x="1000" y="755"><tspan fill="#3b82f6">View</tspan> | <tspan fill="#fbbf24">Edit</tspan></text>
+
+    <text x="440" y="785">123456789014</text>
+    <text x="550" y="785">Garcia, Jose Paulo M.</text>
+    <text x="750" y="785">Grade 11 - Mabini</text>
+    <text x="880" y="785"><tspan fill="#fbbf24">●</tspan> Transferee</text>
+    <text x="1000" y="785"><tspan fill="#3b82f6">View</tspan> | <tspan fill="#fbbf24">Process</tspan></text>
+  </g>
+
+  <!-- Master Data Panel -->
+  <rect x="1120" y="550" width="400" height="270" rx="12" fill="url(#cardGradient)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="1160" y="590" font-family="system-ui, sans-serif" font-size="18" font-weight="600" fill="white">MASTER DATA</text>
+  <text x="1460" y="590" font-family="system-ui, sans-serif" font-size="12" fill="rgba(255,255,255,0.4)" text-anchor="end">Status: ✅ Completed</text>
+
+  <g font-family="system-ui, sans-serif" font-size="12" fill="rgba(255,255,255,0.8)">
+    <rect x="1140" y="610" width="360" height="50" rx="8" fill="rgba(16,185,129,0.15)" stroke="rgba(16,185,129,0.3)" stroke-width="1"/>
+    <text x="1160" y="640" font-weight="600" fill="#10b981">✓</text>
+    <text x="1200" y="640">School Years (2020–2025)</text>
+    <text x="1460" y="640" font-size="11" fill="rgba(255,255,255,0.4)" text-anchor="end">6 records</text>
+
+    <rect x="1140" y="670" width="360" height="50" rx="8" fill="rgba(16,185,129,0.15)" stroke="rgba(16,185,129,0.3)" stroke-width="1"/>
+    <text x="1160" y="700" font-weight="600" fill="#10b981">✓</text>
+    <text x="1200" y="700">Grade Levels (K–12)</text>
+    <text x="1460" y="700" font-size="11" fill="rgba(255,255,255,0.4)" text-anchor="end">13 records</text>
+
+    <rect x="1140" y="730" width="360" height="50" rx="8" fill="rgba(16,185,129,0.15)" stroke="rgba(16,185,129,0.3)" stroke-width="1"/>
+    <text x="1160" y="760" font-weight="600" fill="#10b981">✓</text>
+    <text x="1200" y="760">Sections (42 active)</text>
+    <text x="1460" y="760" font-size="11" fill="rgba(255,255,255,0.4)" text-anchor="end">42 records</text>
+
+    <rect x="1140" y="790" width="360" height="50" rx="8" fill="rgba(16,185,129,0.15)" stroke="rgba(16,185,129,0.3)" stroke-width="1"/>
+    <text x="1160" y="820" font-weight="600" fill="#10b981">✓</text>
+    <text x="1200" y="820">Subjects (86 mapped)</text>
+    <text x="1460" y="820" font-size="11" fill="rgba(255,255,255,0.4)" text-anchor="end">86 records</text>
+  </g>
+
+  <!-- SF1 Import Panel -->
+  <rect x="390" y="840" width="700" height="200" rx="12" fill="url(#cardGradient)" stroke="rgba(255,255,255,0.08)" stroke-width="1" transform="translate(0,-550)"/>
+  <!-- Actually just place it below -->
+  <rect x="390" y="840" width="700" height="200" rx="12" fill="url(#cardGradient)" stroke="rgba(255,255,255,0.08)" stroke-width="1" style="opacity:0"/>
+</svg>

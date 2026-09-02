@@ -21,6 +21,18 @@ export function ProjectCard({ project }: ProjectCardProps) {
             {project.category}
           </span>
         )}
+
+        {project.status === "under-development" && (
+          <span className="rounded-full bg-amber-100 px-3 py-1 text-xs font-semibold text-amber-800 animate-pulse">
+            🚧 Under Development
+          </span>
+        )}
+
+        {project.status === "planned" && (
+          <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">
+            📋 Planned
+          </span>
+        )}
       </div>
 
       {/* Title */}
@@ -52,22 +64,28 @@ export function ProjectCard({ project }: ProjectCardProps) {
         </h4>
 
         <div className="space-y-5">
-          {project.challenge.map((section) => (
-            <div
-              key={section.title}
-              className="rounded-xl border border-slate-200 bg-slate-50 p-4"
-            >
-              <h5 className="mb-3 font-semibold text-slate-900">
-                {section.title}
-              </h5>
+          {typeof project.challenge !== "string"
+            ? project.challenge.map((section) => (
+                <div
+                  key={section.title}
+                  className="rounded-xl border border-slate-200 bg-slate-50 p-4"
+                >
+                  <h5 className="mb-3 font-semibold text-slate-900">
+                    {section.title}
+                  </h5>
 
-              <ul className="list-disc space-y-2 pl-5 text-slate-600">
-                {section.items.map((item) => (
-                  <li key={item}>{item}</li>
-                ))}
-              </ul>
-            </div>
-          ))}
+                  <ul className="list-disc space-y-2 pl-5 text-slate-600">
+                    {section.items.map((item) => (
+                      <li key={item}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+              ))
+            : (
+              <div className="rounded-xl border border-slate-200 bg-slate-50 p-4">
+                <p className="text-slate-600">{project.challenge}</p>
+              </div>
+            )}
         </div>
       </div>
       {/* Impact */}

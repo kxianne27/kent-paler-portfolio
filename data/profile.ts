@@ -10,7 +10,7 @@ export const profile = {
 
   location: "General Santos City, Philippines",
 
-  email: "kentnino.paler@deped.gov.ph",
+  email: "ayamenakayama27@gmail.com",
 
   github: "https://github.com/kxianne27",
 
