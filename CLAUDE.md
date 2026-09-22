@@ -8,7 +8,7 @@ data quality, reporting, records, and operations-support roles. The site must ma
 - Content lives in Part 2 of `docs/portfolio-update-kit.md`. After the content refactor,
   the single content data file becomes the source of truth (path recorded below).
 - If the site and the resume text disagree, the resume text wins.
-- Content data file path: (fill in after the refactor)
+- Content data file path: `data/content.ts`
 
 ## Truthfulness rules (non-negotiable)
 - Never invent employers, job titles, tools, metrics, dates, certifications, testimonials,
