@@ -21,6 +21,10 @@ export function Hero() {
             {profile.tagline}
           </p>
 
+          <p className="mt-4 text-sm text-blue-600 font-medium">
+            Open to fully remote roles
+          </p>
+
           <HeroButtons />
 
           <TechBadges />

@@ -2,7 +2,7 @@ import { profile } from "@/data/content";
 import { Section } from "@/components/layout/Section";
 import { SectionTitle } from "@/components/ui/SectionTitle";
 import { Container } from "@/components/layout/Container";
-import { Mail, MapPin, Clock, Calendar } from "lucide-react";
+import { Mail, MapPin, Clock, Calendar, Phone } from "lucide-react";
 
 export function Contact() {
   const calendlyUrl = process.env.NEXT_PUBLIC_CALENDLY_URL;
@@ -70,6 +70,19 @@ export function Contact() {
                 </p>
                 <p className="mt-1 text-sm text-slate-500">
                   Best for project inquiries and collaboration
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4">
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-blue-100 text-blue-600">
+                <Phone className="size-5" />
+              </div>
+              <div>
+                <h3 className="text-lg font-semibold text-slate-900">Phone</h3>
+                <p className="mt-1 text-slate-600">{profile.phone}</p>
+                <p className="mt-1 text-sm text-slate-500">
+                  Available for fully remote roles
                 </p>
               </div>
             </div>
