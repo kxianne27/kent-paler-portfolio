@@ -30,11 +30,11 @@ export const profile = {
   tagline:
     "15+ years in Philippine public-sector operations and information systems, now open to fully remote roles.",
   location: "General Santos City, Philippines",
-  email: "ayamenakayama27@gmail.com",
+  email: "Ayamenakayama27@gmail.com",
   phone: "+63 916 227 5205",
   github: "https://github.com/kxianne27",
-  linkedin: "https://www.linkedin.com/in/knpaler/",
-  resume: "/Kent-Nino-Paler-Resume.pdf",
+  linkedin: "https://linkedin.com/in/palerkentnino",
+  resume: "/Kent_Nino_Paler_Resume.pdf",
 };
 
 export const navigation = [
