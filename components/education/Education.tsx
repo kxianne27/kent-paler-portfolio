@@ -7,7 +7,7 @@ export function Education() {
   return (
     <Section id="education">
       <Container>
-        <SectionTitle eyebrow="Education" title="Academic Background" />
+        <SectionTitle eyebrow="Education" title="Education" />
 
         <div className="mt-16 space-y-10">
           {education.map((item, index) => (
@@ -18,13 +18,10 @@ export function Education() {
               <div className="flex flex-col justify-between gap-4 md:flex-row">
                 <div>
                   <h3 className="text-2xl font-bold text-slate-900">
-                    {item.degree}
+                    {item.degree}, {item.institution}
                   </h3>
-                  <p className="mt-2 text-blue-600 font-medium">
-                    {item.institution}
-                  </p>
                 </div>
-                <span className="text-slate-500">{item.period}</span>
+                <span className="text-slate-500">({item.period})</span>
               </div>
             </div>
           ))}

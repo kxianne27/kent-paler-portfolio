@@ -7,7 +7,7 @@ export function Training() {
   return (
     <Section id="training">
       <Container>
-        <SectionTitle eyebrow="Training & Certificates" title="Professional Development" />
+        <SectionTitle eyebrow="Training & Certificates" title="Training & Certificates" />
 
         <div className="mt-16 space-y-10">
           {certificates.map((cert, index) => (
@@ -18,11 +18,9 @@ export function Training() {
               <div className="flex flex-col justify-between gap-4 md:flex-row">
                 <div>
                   <h3 className="text-2xl font-bold text-slate-900">
-                    {cert.name}
+                    {cert.name} — {cert.year}
                   </h3>
-                  <p className="mt-2 text-blue-600 font-medium">{cert.issuer}</p>
                 </div>
-                <span className="text-slate-500">{cert.year}</span>
               </div>
             </div>
           ))}

@@ -5,11 +5,11 @@ export function Experience() {
     <section id="experience" className="py-40 lg:py-30">
       <div className="mb-14">
         <p className="text-blue-600 font-semibold uppercase tracking-[0.2em]">
-          Professional Experience
+          Experience
         </p>
 
         <h2 className="mt-4 text-4xl font-bold text-slate-900">
-          Building Digital Solutions Through Experience
+          Experience
         </h2>
       </div>
 

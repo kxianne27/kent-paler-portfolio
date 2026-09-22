@@ -175,45 +175,38 @@ export const skills = {
 export const experience = [
   {
     company:
-      "Department of Education - General Santos City National Secondary School of Arts and Trades",
-    position: "Registrar I",
+      "Department of Education — General Santos City National Secondary School of Arts and Trades",
+    position:
+      "Registrar I | Learner Records, Data Validation & Statistical Reporting",
     period: "Sep 2016 – Present",
     description:
-      "Own the learner-records lifecycle for a secondary school: enrollment, LIS/EBEIS data management, verification, issuance, and archiving with 100% LIS validation accuracy across 3,823 records.",
+      "Own the learner-records lifecycle for a secondary school (enrollment, LIS/EBEIS data management, verification, issuance, archiving) with 100% LIS validation accuracy across 3,823 records and an Outstanding performance rating (4.55, SY 2025–2026).",
     achievements: [
-      "Learner Information System (LIS) Administration",
-      "Data Validation & Statistical Reporting (3,823 records)",
-      "School Forms, BEIS Profile, WinS, BEDs, BARs submissions",
-      "Database Management",
-      "Records Archiving & Integrity",
-      "Outstanding Performance Rating (4.55, SY 2025–2026)",
+      "Consolidate and submit statistical and budget reports (School Forms, BEIS Profile, WinS, BEDs, BARs) to DepEd/DBM standards on or ahead of deadlines.",
     ],
   },
   {
     company:
       "Local Government of General Santos City — City Mayor's Office, ICT Division",
-    position: "Computer Operator I",
+    position:
+      "Computer Operator I | Information Systems, Process Mapping & Technical Documentation",
     period: "May 2013 – Aug 2016",
     description:
       "Designed, built, and maintained government information systems in Visual Basic.NET and MSSQL 2012; led business process mapping and requirements gathering with department heads and end users.",
     achievements: [
-      "Designed, built, and maintained government information systems in Visual Basic.NET and MSSQL 2012",
-      "Led business process mapping and requirements gathering with department heads and end users",
-      "Led implementation and training for the City Health office (12 end-users)",
-      "Produced user manuals, procedures, and workflow diagrams",
+      "Led implementation and training for the City Health office (12 end-users) and produced user manuals, procedures, and workflow diagrams.",
     ],
   },
   {
     company:
       "Local Government of General Santos City — City Social Welfare & Development Office (F.R.A.M.E.)",
-    position: "Administrative Aide IV",
+    position:
+      "Administrative Aide IV | Resident Data Validation, Team Leadership & Database/IT Administration",
     period: "Nov 2010 – May 2013",
     description:
-      "Team Leader for 12 members validating resident records at 99% data accuracy and reaching 99% registration completion of 26,000 members. Information System and Database Administrator and computer-maintenance in-charge, coordinating system updates and security patches with developers.",
+      "Team Leader for 12 members validating resident records at 99% data accuracy and reaching 99% registration completion of 26,000 members.",
     achievements: [
-      "Team Leader for 12 members validating resident records at 99% data accuracy and reaching 99% registration completion of 26,000 members",
-      "Information System and Database Administrator and computer-maintenance in-charge",
-      "Coordinating system updates and security patches with developers",
+      "Information System and Database Administrator and computer-maintenance in-charge, coordinating system updates and security patches with developers.",
     ],
   },
 ];
