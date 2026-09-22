@@ -9,7 +9,7 @@ export function Skills() {
       <Container>
         <SectionTitle
           eyebrow="Skills"
-          title="Data quality, records, systems, and remote-ready strengths"
+          title="Skills"
         />
 
         <div className="mt-16 grid gap-10 sm:grid-cols-2 lg:grid-cols-3">

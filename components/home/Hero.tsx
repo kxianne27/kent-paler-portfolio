@@ -1,8 +1,6 @@
 import { profile } from "@/data/content";
 import { HeroButtons } from "./HeroButtons";
 import { HeroImage } from "./HeroImage";
-import { HeroStats } from "./HeroStats";
-import { TechBadges } from "./TechBadges";
 
 export function Hero() {
   return (
@@ -26,10 +24,6 @@ export function Hero() {
           </p>
 
           <HeroButtons />
-
-          <TechBadges />
-
-          <HeroStats />
         </div>
 
         <HeroImage />

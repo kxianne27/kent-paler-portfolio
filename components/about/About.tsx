@@ -16,8 +16,9 @@ export function About() {
             />
 
             <div className="mt-8 space-y-6 text-lg leading-8 text-slate-600">
-              <p>{about.description.split('\n\n')[0]}</p>
-              <p>{about.description.split('\n\n')[1]}</p>
+              {about.description.split('\n\n').map((paragraph, index) => (
+                <p key={index}>{paragraph}</p>
+              ))}
             </div>
 
             <div className="mt-10 grid gap-8 sm:grid-cols-2">

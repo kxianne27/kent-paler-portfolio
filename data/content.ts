@@ -54,10 +54,12 @@ export const heroButtons = [
 ];
 
 export const about = {
-  title: "Building Data-Driven Systems that Improve Public Services",
-  description: `I am a data quality, records, and operations support specialist with 15+ years of experience in Philippine public-sector operations. I began in local-government IT, building information systems, mapping business processes, and training users.
+  title: "Data, records, and systems for remote operations support",
+  description: `Data, records, and systems professional with 15+ years in Philippine public-sector operations, moving into fully remote data quality, reporting, documentation, and operations-support roles.
 
-For the last decade I have owned a secondary school's learner-records and reporting operations: 100% accuracy across 3,823 records in LIS validation, reports submitted on or ahead of deadlines, and an Outstanding performance rating (4.55, SY 2025–2026).`,
+I began in local-government IT, building city information systems, mapping business processes, and training users. For the last decade I have owned a secondary school's learner-records and reporting operations: 100% accuracy across 3,823 records in LIS validation, reports submitted on or ahead of deadlines, and an Outstanding performance rating (4.55, SY 2025–2026).
+
+My current title is Registrar, but the work is data validation, statutory reporting, documentation, and process discipline under Data Privacy Act (RA 10173) controls, which are the same skills remote teams depend on. I also bring hands-on range in database design, QA and user acceptance testing, technical writing, and AI-assisted coding.`,
   highlights: [
     "15+ Years Government Service",
     "Data Validation & Quality Assurance",
@@ -87,7 +89,7 @@ For the last decade I have owned a secondary school's learner-records and report
     {
       title: "AI-Assisted Development",
       description:
-        "Build and maintain portfolio website (Vercel-hosted) using AI-assisted coding with Claude Code. Proficient with OpenAI API, Ollama, and Claude Code toolchains.",
+        "Build and maintain a personal portfolio hosted on Vercel using AI-assisted coding.",
     },
   ],
 };
@@ -156,19 +158,12 @@ export const skills = {
     },
   ],
   techStack: [
-    "PHP",
-    "Laravel",
-    "TypeScript",
-    "Next.js",
-    "React",
-    "MySQL",
-    "SQL Server",
-    "Tailwind CSS",
-    "Git",
-    "VB.NET",
-    "Claude Code",
-    "OpenAI API",
-    "Ollama",
+    "Data Validation",
+    "Statutory Reporting",
+    "Records Management",
+    "Visual Basic.NET",
+    "MSSQL 2012",
+    "AI-Assisted Coding",
   ],
 };
 
@@ -265,10 +260,10 @@ export const contact = {
 export const projects: Project[] = [
   {
     slug: "deped-lis",
-    title: "Learner Records & Reporting Operations",
-    subtitle: "DepEd Operations (2016–Present)",
+    title: "Learner Records & Reporting Operations (DepEd, 2016–Present)",
+    subtitle: "DepEd, 2016–Present",
     overview:
-      "End-to-end management of learner records and statistical reporting for a secondary school under DepEd supervision.",
+      "Owned the learner-records lifecycle for a secondary school: enrollment, LIS/EBEIS data management, verification, issuance, and archiving.",
     challenge: [
       {
         title: "Manual Processing",
@@ -282,13 +277,12 @@ export const projects: Project[] = [
     solution:
       "Managed automated Learner Information System (LIS) for enrollment, data validation, issuance, and archiving. Implemented strict data quality protocols for 100% accuracy.",
     impact: [
-      "100% LIS validation accuracy across 3,823 records",
-      "Statistical reports submitted 4-5 working days early",
-      "Year-end archiving completed 1-2 weeks ahead of deadline",
-      "Outstanding Performance Rating: 4.55 (SY 2025–2026)",
+      "100% accuracy across 3,823 learner records in LIS validation, zero backlog, same-day retrieval (SY 2025–2026)",
+      "BEDs/BARs submitted 4–5 working days early",
+      "Year-end archiving 1–2 weeks ahead of deadlines",
     ],
-    technologies: ["SQL Server", "Database Design", "Data Validation", "Process Documentation"],
-    role: "Registrar I | Records & Data Management",
+    technologies: ["Data Validation", "Statutory Reporting", "Records Management", "RA 10173"],
+    role: "Registrar I | Learner Records, Data Validation & Statistical Reporting",
     year: "2016 – Present",
     featured: true,
     image: "/images/projects/mtfrs.svg",
@@ -298,10 +292,10 @@ export const projects: Project[] = [
   },
   {
     slug: "lgu-info-systems",
-    title: "City Government Information Systems",
-    subtitle: "LGU General Santos City (2013–2016)",
+    title: "City Government Information Systems (LGU General Santos City, 2013–2016)",
+    subtitle: "LGU General Santos City, 2013–2016",
     overview:
-      "Designed and maintained enterprise information systems for city offices including franchising, health, billing, and tax systems.",
+      "Designed, built, and maintained systems for city offices: motorized tricycle franchising (LG-MTFRS), City Health Information, Billing and Collection, Accountable Form Management, Community Tax, and Real Property Assessment and Tax.",
     challenge: [
       {
         title: "Process Inefficiency",
@@ -313,15 +307,14 @@ export const projects: Project[] = [
       },
     ],
     solution:
-      "Built integrated VB.NET/MSSQL systems: LG-MTFRS, Health Information System, Billing/Collection, Form Management, Tax Assessment. Conducted process mapping and user training.",
+      "Designed, built, and maintained systems for city offices: motorized tricycle franchising (LG-MTFRS), City Health Information, Billing and Collection, Accountable Form Management, Community Tax, and Real Property Assessment and Tax.",
     impact: [
-      "Validated through QA testing and UAT",
-      "12 end-user trained for Health Office systems",
-      "User manuals and workflow diagrams documented",
-      "Seamless transition to automated systems",
+      "Validated through QA testing, user acceptance testing, and time-and-motion studies before rollout",
+      "Trained 12 end-users for the City Health office",
+      "Wrote user manuals, procedures, and workflow diagrams",
     ],
-    technologies: ["VB.NET", "MSSQL 2012", "Process Mapping", "Technical Documentation"],
-    role: "Computer Operator I | Systems Analyst",
+    technologies: ["Visual Basic.NET", "MSSQL 2012", "Process Mapping", "QA/UAT", "Technical Documentation"],
+    role: "Computer Operator I | Information Systems, Process Mapping & Technical Documentation",
     year: "2013 – 2016",
     featured: false,
     image: "/images/projects/mtfrs.svg",
@@ -331,10 +324,10 @@ export const projects: Project[] = [
   },
   {
     slug: "frame-validation",
-    title: "F.R.A.M.E. Resident Data Validation",
-    subtitle: "LGU Social Welfare Office (2010–2013)",
+    title: "F.R.A.M.E. Resident Data Validation (LGU General Santos City, 2010–2013)",
+    subtitle: "LGU General Santos City, 2010–2013",
     overview:
-      "Team leadership for resident data validation and database administration for the Social Welfare and Development Office.",
+      "Led a 12-member team validating resident records (personal details, family background, PhilHealth and contribution data).",
     challenge: [
       {
         title: "Data Accuracy",
@@ -346,28 +339,26 @@ export const projects: Project[] = [
       },
     ],
     solution:
-      "Led 12-member team in rigorous data validation protocols. Managed database administration and security patch coordination with developers.",
+      "Led a 12-member team validating resident records (personal details, family background, PhilHealth and contribution data).",
     impact: [
-      "99% data accuracy achieved across 26,000+ members",
-      "99% registration completion rate",
-      "System updates coordinated with development team",
-      "Confidential records handled with integrity",
+      "99% data accuracy",
+      "99% registration completion out of 26,000 members, including during a barangay registration campaign",
     ],
-    technologies: ["Database Administration", "Data Validation", "Team Leadership"],
-    role: "Administrative Aide IV | Data Validation Team Leader",
+    technologies: ["Data Validation", "Team Leadership", "Database Administration"],
+    role: "Administrative Aide IV | Resident Data Validation, Team Leadership & Database/IT Administration",
     year: "2010 – 2013",
     featured: false,
     image: "/images/projects/placeholder.svg",
-    client: "LGU Social Welfare Office (F.R.A.M.E.)",
+    client: "LGU General Santos City",
     category: "Social Services Data System",
     status: "completed",
   },
   {
     slug: "portfolio-website",
     title: "This Portfolio Website",
-    subtitle: "Personal Professional Showcase (2024–Present)",
+    subtitle: "Personal portfolio hosted on Vercel",
     overview:
-      "Professional portfolio showcasing my career transition from government operations to remote-ready data quality and systems support roles.",
+      "Personal portfolio hosted on Vercel, built and maintained using AI-assisted coding.",
     challenge: [
       {
         title: "Career Transition",
@@ -379,14 +370,12 @@ export const projects: Project[] = [
       },
     ],
     solution:
-      "Built with Next.js 16, TypeScript, Tailwind CSS, and Vercel deployment. Content structured for data-driven maintenance. AI-assisted development with Claude Code.",
+      "Personal portfolio hosted on Vercel, built and maintained using AI-assisted coding.",
     impact: [
-      "Professional online presence established",
-      "Showcases data quality and operations expertise",
-      "Ready for remote role opportunities",
+      "Personal portfolio hosted on Vercel, built and maintained using AI-assisted coding.",
     ],
-    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel", "Claude Code", "AI-Assisted Development"],
-    role: "Full-Stack Developer & Content Strategist",
+    technologies: ["AI-Assisted Coding", "Vercel", "Next.js", "TypeScript", "React", "Tailwind CSS"],
+    role: "Personal portfolio",
     year: "2024 – Present",
     featured: true,
     image: "/images/projects/placeholder.svg",

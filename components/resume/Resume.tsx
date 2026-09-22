@@ -2,7 +2,7 @@ import { profile, experience, skills } from "@/data/content";
 import { Section } from "@/components/layout/Section";
 import { SectionTitle } from "@/components/ui/SectionTitle";
 import { Container } from "@/components/layout/Container";
-import { Download, CheckCircle, ChevronRight } from "lucide-react";
+import { Download, CheckCircle } from "lucide-react";
 
 export function Resume() {
   return (
@@ -96,32 +96,6 @@ export function Resume() {
                   </div>
                 </div>
               ))}
-            </div>
-
-            {/* Core Competencies */}
-            <div className="mt-12">
-              <h4 className="text-sm font-semibold uppercase tracking-wider text-slate-500">
-                Core Competencies
-              </h4>
-              <ul className="mt-6 space-y-3" role="list">
-                {[
-                  "Enterprise Information Systems Architecture",
-                  "Full-Stack Web Development (Laravel, Next.js, PHP, VB.NET)",
-                  "Database Design & Optimization (SQL Server, MySQL)",
-                  "Business Process Analysis & Automation",
-                  "Government Digital Transformation",
-                  "Data Quality Assurance & Reporting",
-                  "System Integration & API Development",
-                  "Legacy System Modernization",
-                  "User Training & Technical Documentation",
-                  "Agile Development & Version Control (Git)",
-                ].map((competency) => (
-                  <li key={competency} className="flex items-center gap-3 text-slate-700">
-                    <ChevronRight className="size-4 text-blue-500 shrink-0" />
-                    <span>{competency}</span>
-                  </li>
-                ))}
-              </ul>
             </div>
           </div>
         </div>
