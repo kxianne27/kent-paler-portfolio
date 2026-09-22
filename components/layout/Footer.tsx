@@ -1,6 +1,5 @@
 import Link from "next/link";
-import { profile } from "@/data/profile";
-import { navigation } from "@/data/navigation";
+import { profile, navigation } from "@/data/content";
 import { GitBranch, UserRound, Mail, MapPin } from "lucide-react";
 
 export function Footer() {

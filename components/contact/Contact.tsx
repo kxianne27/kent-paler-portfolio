@@ -1,4 +1,4 @@
-import { profile } from "@/data/profile";
+import { profile } from "@/data/content";
 import { Section } from "@/components/layout/Section";
 import { SectionTitle } from "@/components/ui/SectionTitle";
 import { Container } from "@/components/layout/Container";

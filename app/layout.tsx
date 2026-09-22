@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { seo } from "@/data/content";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -16,26 +17,13 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://kent-paler-portfolio.vercel.app"),
 
   title: {
-    default: "Kent Niño Paler | Systems Analyst & Software Engineer",
+    default: seo.title,
     template: "%s | Kent Niño Paler",
   },
 
-  description:
-    "Professional portfolio of Kent Niño Paler showcasing enterprise information systems, software engineering, systems analysis, and government digital transformation projects.",
+  description: seo.description,
 
-  keywords: [
-    "Systems Analyst",
-    "Software Engineer",
-    "Data Analyst",
-    "PHP Developer",
-    "SQL Server",
-    "MySQL",
-    "Next.js",
-    "TypeScript",
-    "Government Information Systems",
-    "Digital Transformation",
-    "Business Process Automation",
-  ],
+  keywords: seo.keywords,
 
   authors: [
     {
@@ -46,9 +34,8 @@ export const metadata: Metadata = {
   creator: "Kent Niño Paler",
 
   openGraph: {
-    title: "Kent Niño Paler",
-    description:
-      "Systems Analyst • Software Engineer • Enterprise Information Systems",
+    title: seo.openGraph.title,
+    description: seo.openGraph.description,
     type: "website",
   },
 };

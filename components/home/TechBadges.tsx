@@ -1,4 +1,4 @@
-import { techStack } from "@/data/skills";
+import { techStack } from "@/data/content";
 
 export function TechBadges() {
   return (

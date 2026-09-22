@@ -1,6 +1,4 @@
-import { profile } from "@/data/profile";
-import { experience } from "@/data/experience";
-import { skills } from "@/data/skills";
+import { profile, experience, skills } from "@/data/content";
 import { Section } from "@/components/layout/Section";
 import { SectionTitle } from "@/components/ui/SectionTitle";
 import { Container } from "@/components/layout/Container";
@@ -81,7 +79,7 @@ export function Resume() {
             </h3>
 
             <div className="mt-8 space-y-10">
-              {skills.map((category) => (
+              {skills.groups.map((category) => (
                 <div key={category.name}>
                   <h4 className="text-sm font-semibold uppercase tracking-wider text-slate-500">
                     {category.name}

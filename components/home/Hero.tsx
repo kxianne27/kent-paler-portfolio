@@ -1,4 +1,4 @@
-import { profile } from "@/data/profile";
+import { profile } from "@/data/content";
 import { HeroButtons } from "./HeroButtons";
 import { HeroImage } from "./HeroImage";
 import { HeroStats } from "./HeroStats";
@@ -10,7 +10,7 @@ export function Hero() {
       <div className="grid items-center gap-16 lg:grid-cols-2">
         <div>
           <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-blue-600">
-            {profile.headline} • {profile.subtitle}
+            {profile.headline}
           </p>
 
           <h1 className="text-5xl font-bold tracking-tight text-slate-900 md:text-7xl">
