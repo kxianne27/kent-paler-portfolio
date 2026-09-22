@@ -40,8 +40,10 @@ export const profile = {
 export const navigation = [
   { name: "About", href: "#about" },
   { name: "Skills", href: "#skills" },
-  { name: "Projects", href: "#projects" },
   { name: "Experience", href: "#experience" },
+  { name: "Education", href: "#education" },
+  { name: "Training", href: "#training" },
+  { name: "Projects", href: "#projects" },
   { name: "Contact", href: "#contact" },
 ];
 
@@ -189,56 +191,71 @@ export const experience = [
   },
   {
     company:
-      "Local Government Unit of General Santos City - Information and Communications Technology Division",
-    position: "Computer Operator I | Information Systems",
+      "Local Government of General Santos City — City Mayor's Office, ICT Division",
+    position: "Computer Operator I",
     period: "May 2013 – Aug 2016",
     description:
-      "Designed, built, and maintained government information systems in Visual Basic.NET and MSSQL 2012. Led business process mapping and requirements gathering.",
+      "Designed, built, and maintained government information systems in Visual Basic.NET and MSSQL 2012; led business process mapping and requirements gathering with department heads and end users.",
     achievements: [
-      "Municipal Tricycle Franchising Management System (LG-MTFRS)",
-      "City Health Information System",
-      "Billing and Collection System",
-      "Accountable Form Management",
-      "Community Tax Certificate System",
-      "Real Property Assessment and Tax System",
-      "Process Mapping & User Requirements Gathering",
-      "Technical Documentation & User Manuals",
+      "Designed, built, and maintained government information systems in Visual Basic.NET and MSSQL 2012",
+      "Led business process mapping and requirements gathering with department heads and end users",
+      "Led implementation and training for the City Health office (12 end-users)",
+      "Produced user manuals, procedures, and workflow diagrams",
     ],
   },
   {
     company:
-      "Local Government Unit of General Santos City - Social Welfare & Development Office (F.R.A.M.E.)",
-    position: "Administrative Aide IV | Resident Data Validation",
+      "Local Government of General Santos City — City Social Welfare & Development Office (F.R.A.M.E.)",
+    position: "Administrative Aide IV",
     period: "Nov 2010 – May 2013",
     description:
-      "Team Leader for 12 members validating resident records at 99% data accuracy. Information System and Database Administrator for the office.",
+      "Team Leader for 12 members validating resident records at 99% data accuracy and reaching 99% registration completion of 26,000 members. Information System and Database Administrator and computer-maintenance in-charge, coordinating system updates and security patches with developers.",
     achievements: [
-      "Resident Data Validation (99% accuracy, 26,000+ members)",
-      "Database Administration & System Maintenance",
-      "Security Patch Coordination with Developers",
-      "Team Leadership (12 members)",
+      "Team Leader for 12 members validating resident records at 99% data accuracy and reaching 99% registration completion of 26,000 members",
+      "Information System and Database Administrator and computer-maintenance in-charge",
+      "Coordinating system updates and security patches with developers",
     ],
   },
 ];
 
 export const education = [
   {
-    institution: "University of Southern Philippines - General Santos",
-    degree: "Bachelor of Science in Information Technology",
-    period: "2005 – 2009",
+    degree: "Master's in Public Administration",
+    institution: "Notre Dame of Dadiangas University, General Santos City",
+    period: "Jun 2015 – Mar 2018",
   },
   {
-    institution: "Department of Education - In-Service Training",
-    program: "Data Privacy and Cybersecurity Training",
-    period: "2023",
+    degree: "Bachelor of Science in Information Technology",
+    institution: "Notre Dame of Dadiangas University, General Santos City",
+    period: "Jun 2006 – Mar 2010",
   },
 ];
 
 export const certificates = [
   {
-    name: "Data Privacy Act (RA 10173) Compliance Training",
+    name: "DICT-ICT012: Advanced Level of Digital Transformation",
     issuer: "DICT",
-    year: "2023",
+    year: "March 2024",
+  },
+  {
+    name: "DICT-ICT007: Data Privacy — Good Governance",
+    issuer: "DICT",
+    year: "February 2024",
+  },
+  {
+    name: "Cybersecurity Competency Framework Training",
+    issuer: "DICT",
+    year: "November 2023",
+  },
+  {
+    name: "Digital Transformative Technologies",
+    issuer: "DICT",
+    year: "July 2022",
+  },
+  {
+    name: "Digital Governance and Management Training",
+    issuer: "DICT",
+    year: "October 2021",
   },
 ];
 

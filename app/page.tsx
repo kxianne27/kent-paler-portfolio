@@ -5,6 +5,8 @@ import { Hero } from "@/components/home/Hero";
 import { About } from "@/components/about/About";
 import { Skills } from "@/components/skills/Skills";
 import { Experience } from "@/components/experience/Experience";
+import { Education } from "@/components/education/Education";
+import { Training } from "@/components/training/Training";
 import { Projects } from "@/components/projects/Projects";
 import { Resume } from "@/components/resume/Resume";
 import { Contact } from "@/components/contact/Contact";
@@ -22,6 +24,10 @@ export default function Home() {
         <Skills />
         <div className="my-12 border-t border-slate-200" />
         <Experience />
+        <div className="my-12 border-t border-slate-200" />
+        <Education />
+        <div className="my-12 border-t border-slate-200" />
+        <Training />
         <div className="my-12 border-t border-slate-200" />
         <Projects />
         <div className="my-12 border-t border-slate-200" />
