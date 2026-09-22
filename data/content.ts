@@ -20,7 +20,7 @@ export const seo = {
   openGraph: {
     title: "Kent Niño Paler — Data Quality, Records & Operations Support Specialist",
     description:
-      "15+ years in public-sector data quality, reporting, and records. Open to fully remote roles.",
+      "15+ years in public-sector data quality, reporting, and records. Open to fully remote roles. Database design, process documentation, AI-assisted coding.",
   },
 };
 
