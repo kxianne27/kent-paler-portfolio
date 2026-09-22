@@ -93,28 +93,64 @@ For the last decade I have owned a secondary school's learner-records and report
 export const skills = {
   groups: [
     {
-      name: "Data Management & Validation",
-      items: ["SQL Server", "MySQL", "MariaDB", "Data Validation", "Database Design", "MSSQL 2012"],
+      name: "Data Quality & Reporting",
+      items: [
+        "Data Validation & Reconciliation",
+        "Data Quality Assurance",
+        "Statutory & Statistical Reporting",
+        "Report Consolidation",
+        "LIS / EBEIS Data Management",
+      ],
     },
     {
-      name: "Programming & Scripting",
-      items: ["PHP", "Laravel", "TypeScript", "JavaScript", "VB.NET", "SQL", "HTML/CSS"],
+      name: "Records & Documentation",
+      items: [
+        "Records Management",
+        "Records Archiving & Retrieval",
+        "Document Control & Verification",
+        "Audit Trails",
+        "Technical Documentation",
+        "Workflow Diagrams",
+        "User Manuals",
+      ],
     },
     {
-      name: "Systems & Applications",
-      items: ["Next.js", "Node.js", ".NET Framework", "AdminLTE", "Bootstrap", "jQuery"],
-    },
-    {
-      name: "Process & Documentation",
-      items: ["Process Mapping", "User Training", "Technical Documentation", "Workflow Design", "User Manuals"],
+      name: "Systems & Process Improvement",
+      items: [
+        "Business Process Mapping",
+        "Requirements Gathering",
+        "Database Design (MSSQL 2012)",
+        "Visual Basic.NET",
+        "QA & User Acceptance Testing",
+        "End-User Training",
+      ],
     },
     {
       name: "AI-Assisted Coding & Digital Tools",
-      items: ["Claude Code", "ChatGPT", "GitHub Copilot", "OpenAI API", "Ollama", "Microsoft Word", "Excel", "PowerPoint"],
+      items: [
+        "AI-assisted web development with Claude",
+        "Personal portfolio website (Vercel-hosted)",
+        "Microsoft Word",
+        "Excel",
+        "PowerPoint",
+      ],
     },
     {
       name: "Compliance & Security",
-      items: ["Data Privacy Act (RA 10173)", "Confidential Records Handling", "DICT Training"],
+      items: [
+        "Data Privacy Act (RA 10173)",
+        "Confidential Records Handling",
+        "DICT Data Privacy and Cybersecurity Training",
+      ],
+    },
+    {
+      name: "Remote-Ready Strengths",
+      items: [
+        "Self-directed ownership of end-to-end workflows with deadlines met early",
+        "Written documentation and audit logs",
+        "Digital security and confidentiality",
+        "Coordination with department heads, developers, and division-level offices",
+      ],
     },
   ],
   techStack: [
